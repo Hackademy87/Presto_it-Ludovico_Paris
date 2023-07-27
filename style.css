@@ -1,0 +1,199 @@
+*{
+
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+
+h1,h2,h3,h4,h5,h6, .h1,.h2,.h3,.h4,.h5,.h6{
+    font-family: 'Monoton', cursive;
+}
+
+
+:root{
+    --color1: rgb(170, 69, 10);
+    --Color2: rgb(179, 209, 245);
+    --Color3: rgb(95, 0, 0);
+}
+.tx-color1{
+    color: var(--color1);
+}
+.tx-color2{
+    color: var(--Color2);
+}
+.tx-color3{
+    color: var(--Color3);
+}
+/* navbar */
+
+.navbar-custom{
+    background-color: var(--Color2);
+    margin-left: 30%;
+    margin-right: 30%  ;
+    border-radius: 20px;
+    transition: 0.5s;
+
+}
+.logo-custom{
+    width: 50px;
+    height: 50px;
+    margin-right: 100px;
+
+}
+.nav-link:hover{
+    color: var(--color3);
+    border-bottom:2px solid black;
+    font-weight: bold;
+}
+.navbar-ciao{
+    background-color: var(--color1);
+}
+.link-ciao{
+    color: var(--Color2);
+}
+
+/* header */
+/* header immagine e titolo */
+.headerCustom{
+    height: 100vh;
+    background:radial-gradient(circle, rgba(179,209,245,0) 45%, rgba(170,69,10,0.5) 84%, rgba(252,252,252,0.8) 98%), url(/image/header.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.titoloprincipale{
+    font-size: 100px;
+    background: linear-gradient(87deg, rgba(179,209,245,0) 2%, rgba(179,209,245,0.5) 36%, rgba(179,209,245,0.5) 75%, rgba(179,209,245,0) 97%);;
+    color: var(--color1);
+}
+/* fine header immagine e titolo */
+/* titoloheader */
+.btn-custom {
+    width: 45%;
+    font-size: 1.2rem;
+    padding: 1rem 2.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: var(--color1);
+    color: var(--Color2);
+    font-weight: 700;
+    transition: 0.6s;
+    box-shadow: 0px 0px 60px var(--Color2);
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+    animation-name: bottonianime;
+    animation-duration: 4s;
+  }
+  @keyframes bottonianime {
+    from {
+        margin-left: 100%;
+        width: 100%;
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 45%;
+      }
+    }
+  
+  .btn-custom:active {
+    scale: 0.92;
+  }
+  
+  .btn-custom:hover {
+   
+    background: linear-gradient(270deg, rgba(179, 209, 245, 0.3) 0%, rgba(179, 209, 245, 0.6) 60%);
+    color:var(--color1);
+  }
+ /* fine header & button */
+ /* inizio Main */
+ hr {
+    border: 5px solid var(--color1);
+    border-radius: 5px;
+  }
+.group_1{
+    width: 50%;
+    height: 20vh;
+    background-image: url(image/group1.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+.group_2{
+    width: 50%;
+    height: 20vh;
+    background-image: url(image/group2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.group_3{
+    width: 50%;
+    height: 20vh;
+    background-image: url(image/group3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.group_4{
+    width: 50%;
+    height: 20vh;
+    background-image: url(image/group4.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    
+}
+.col-custom1{
+    background-color: rgba(230, 230, 230, 0.5);
+}
+.col-custom3{
+    border:10px solid var(--color1) ;
+    border-radius: 10px;
+}
+.swipe {
+    position: relative;
+    background-color: #F1F7F7;
+    width: 200px;
+    height: 60px;
+    color: rgba(255, , 204, 1);
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.35);
+    border-left: 0.5px solid rgba(0, 0, 0, 0.35);
+    padding-left: 40px;
+    cursor: pointer;
+    transition: 0.35s ease;
+  }
+  
+  .swipe:hover {
+    padding-left: 40px;
+    padding-right: 0px;
+    color: var(--Color2);
+  }
+  
+  .container {
+    position: absolute;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    background: var(--color1);
+    border-radius: 50%;
+    transition: 0.35s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--Color2);
+  }
+  
+  .swipe:hover .container {
+    left: calc(100% - 55px);
+    color: var(--color2);
+  }
